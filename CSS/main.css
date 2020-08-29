@@ -905,6 +905,10 @@ hr {
   padding-bottom: 94px;
 }
 
+.foto {
+  display: block;
+}
+
 .social-list {
   display: -webkit-box;
   display: -ms-flexbox;
