@@ -322,8 +322,7 @@ summary {
   border-color: transparent;
 }
 
-.btn:hover,
-.btn:focus {
+.btn:hover, .btn:focus {
   color: #ffffff;
   background: #2196f3;
   border-radius: 4px;
@@ -443,6 +442,14 @@ summary {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.menu-link:hover::after, .menu-link:focus::after {
+  opacity: 1;
+}
+
+.menu-link:hover, .menu-link:focus {
+  color: #2196f3;
+}
+
 .menu-link::after {
   content: "";
   position: absolute;
@@ -460,17 +467,7 @@ summary {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu-link:hover::after,
-.menu-link:focus::after {
-  opacity: 1;
-}
-
 .current {
-  color: #2196f3;
-}
-
-.menu-link:hover,
-.menu-link:focus {
   color: #2196f3;
 }
 
@@ -535,6 +532,16 @@ hr {
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+.projects:hover .overlay-port {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .projects:not(:nth-child(3n)) {
   margin-right: 30px;
 }
@@ -574,16 +581,6 @@ hr {
   height: 100%;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
-  opacity: 1;
-  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.projects:hover .overlay-port {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
   opacity: 1;
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -718,8 +715,7 @@ hr {
   border-radius: 50%;
 }
 
-.social-icons-link:hover,
-.social-icons-link:focus {
+.social-icons-link:hover, .social-icons-link:focus {
   background: #2196f3;
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
