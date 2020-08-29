@@ -33,11 +33,11 @@
   opacity: 1;
 
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
 }
 
 .modal {
@@ -77,12 +77,12 @@
   transform: translateX(248px);
 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.btn-modal:focus,
-.btn-modal:hover {
-  fill: $accent-color;
-  outline: $accent-color;
+  &:focus,
+  &:hover {
+    fill: $accent-color;
+    outline: $accent-color;
+  }
 }
 
 .title-modal {

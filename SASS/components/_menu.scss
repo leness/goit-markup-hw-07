@@ -14,6 +14,16 @@
   color: $primary-text-color;
   text-decoration: none;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover::after,
+  &:focus::after {
+    opacity: 1;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
 .menu-link::after {
@@ -32,16 +42,6 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu-link:hover::after,
-.menu-link:focus::after {
-  opacity: 1;
-}
-
 .current {
-  color: $accent-color;
-}
-
-.menu-link:hover,
-.menu-link:focus {
   color: $accent-color;
 }

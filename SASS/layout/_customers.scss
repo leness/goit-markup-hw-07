@@ -21,6 +21,10 @@
 
 .customer-clients {
   fill: #afb1b8;
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
 }
 
 .customer-item {
@@ -32,21 +36,16 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-}
 
-.customer-clients:hover,
-.customer-clients:focus {
-  fill: $accent-color;
-}
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-color;
 
-.customer-item:hover,
-.customer-item:focus {
-  border: 1px solid $accent-color;
+    transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-  transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.customer-item:hover .customer-clients,
-.customer-item:focus .customer-clients {
-  fill: $accent-color;
+  &:hover .customer-clients,
+  &:focus .customer-clients {
+    fill: $accent-color;
+  }
 }
