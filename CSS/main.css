@@ -559,9 +559,10 @@ summary {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn-modal:focus {
+.btn-modal:focus,
+.btn-modal:hover {
   fill: #2196f3;
-  outline: transparent;
+  outline: #2196f3;
 }
 
 .title-modal {
@@ -649,7 +650,6 @@ summary {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 30px;
-  align-items: center;
 }
 
 .comment {
@@ -751,6 +751,9 @@ summary {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 hr {
@@ -1109,6 +1112,7 @@ hr {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
 }
 
 .mail {
