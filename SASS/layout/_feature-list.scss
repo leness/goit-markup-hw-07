@@ -1,6 +1,10 @@
 .feature-list {
   display: flex;
 
+  // right: 0;
+  // left: 0;
+  // bottom: -10px;
+
   padding-bottom: 94px;
   padding-left: 0px;
   padding-right: 0px;
@@ -12,18 +16,23 @@
   margin-right: 30px;
 }
 
-.applications-item {
-  position: relative;
-}
+// .applications-item {
+//   display: flex;
+// }
 
 .studio {
-  position: absolute;
+  position: relative;
   bottom: 4px;
   left: 0;
   width: 370px;
 }
 
 .applications {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 5px;
+
   margin-top: 0px;
   margin-bottom: 0px;
   padding: 27px 82px;
