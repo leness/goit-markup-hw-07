@@ -651,6 +651,7 @@ summary {
 
 .comment {
   resize: none;
+  height: 120px;
   padding: 12px 16px;
   margin-bottom: 20px;
   margin-top: 4px;
