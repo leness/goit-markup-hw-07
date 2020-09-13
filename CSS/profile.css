@@ -269,9 +269,44 @@ summary {
   display: list-item;
 }
 
+@font-face {
+  font-family: "Raleway", sans-serif;
+  src: url("../../fonts/raleway-v17-latin-700.woff2") format("woff2"), url("../../fonts/raleway-v17-latin-700.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url("../../fonts/roboto-v20-latin-regular.woff2") format("woff2"), url("../../fonts/roboto-v20-latin-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url("../../fonts/roboto-v20-latin-900.woff2") format("woff2"), url("../../fonts/roboto-v20-latin-900.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url("../../fonts/roboto-v20-latin-700.woff2") format("woff2"), url("../../fonts/roboto-v20-latin-700.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url("../../fonts/roboto-v20-latin-500.woff2") format("woff2"), url("../../fonts/roboto-v20-latin-500.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
 .body {
   margin: 0px;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   background-color: #ffffff;
   color: #212121;
 }
@@ -341,7 +376,7 @@ summary {
   padding-top: 24px;
   padding-bottom: 25px;
   margin-right: 85px;
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
@@ -630,7 +665,7 @@ hr {
 }
 
 .logo-footer {
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
